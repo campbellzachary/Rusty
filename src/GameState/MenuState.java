@@ -29,8 +29,8 @@ public class MenuState extends GameState {
 			bg = new Background("/Backgrounds/menubg.gif", 1);
 			bg.setVector(-0.1, 0);
 			
-			titleColor = new Color(128, 0, 0);
-			titleFont = new Font("Comic Sans", Font.PLAIN, 28);
+			titleColor = new Color(28, 0, 0);
+			titleFont = new Font("Bauhaus 93", Font.PLAIN, 28);
 			
 			font = new Font ("Arial", Font.PLAIN, 12);
 
@@ -52,7 +52,8 @@ public class MenuState extends GameState {
 		// draw title
 		g.setColor(titleColor);
 		g.setFont(titleFont);
-		g.drawString("Rusty",  80,  70);
+		g.drawString("Rusty's Adventure",  50, 70);
+		g.drawString("Alpha Build",  90, 100);
 		
 		//draw menu options
 		g.setFont(font);
