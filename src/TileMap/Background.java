@@ -2,9 +2,7 @@ package TileMap;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-
 import javax.imageio.ImageIO;
-
 import com.goldenharpstudios.rez.GamePanel;
 
 
@@ -24,11 +22,9 @@ public class Background {
 	public Background(String s, double ms) {
 
 		try {
-			image = ImageIO.read(
-					getClass().getResourceAsStream(s)
-					);
-			width = image.getWidth(); ///////////////////
-			height = image.getHeight(); //////////////////
+			image = ImageIO.read(getClass().getResourceAsStream(s));
+			width = image.getWidth();
+			height = image.getHeight();
 			moveScale = ms;
 		}
 		catch(Exception e) {
